@@ -1,0 +1,54 @@
+body {
+  background: #ffffff;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+}
+
+.header {
+  background-image: url("../img/header.jpg");
+}
+
+.header__menu-button {
+  height: 50px;
+  width: 50px;
+  background: #f7654a;
+  border: none;
+  padding: 0;
+}
+
+.header__menu-button:hover {
+  background: #f70a27;
+}
+
+.header__menu-button svg {
+  fill: white;
+  width: 21px;
+  height: 18px;
+}
+
+.header__menu-button:hover svg {
+  fill: gray;
+}
+.header__title {
+  text-transform: uppercase;
+  font-family: Oswald;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 95px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 35px;
+}
+.header__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.container {
+  max-width: 1010px;
+  margin: 0 auto;
+}
