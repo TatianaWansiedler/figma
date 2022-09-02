@@ -3,9 +3,20 @@ body {
   font-family: 'Oswald', sans-serif;
   font-style: normal;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 
 .header {
   background-image: url("../img/header.jpg");
+  padding: 0 0 320px;;
 }
 
 .header__menu-button {
@@ -29,6 +40,24 @@ body {
 .header__menu-button:hover svg {
   fill: gray;
 }
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.header__navigation-page {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: -36px;
+  background:white;
+}
+.header__menu-button:hover + .header__navigation-page{
+  display: block;
+}
+.header__navigation-page:hover {
+  display: block;
+}
 .header__title {
   text-transform: uppercase;
   font-family: Oswald;
@@ -48,7 +77,21 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+
 .container {
   max-width: 1010px;
   margin: 0 auto;
+}
+.age__list {
+  display: flex;
+  justify-content: space-between;
+  background: #F7F7F7;
+  padding: 57px 130px;
+}
+.age__item {
+  width: 190px;
+  text-align: center;
+}
+.age{
+  margin: -80px 0 0 0;
 }
